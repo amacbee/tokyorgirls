@@ -7,7 +7,7 @@ library('ggplot2')
 #####################################
 
 # データの読み込み
-data.path = '/Users/amacbee/Dropbox/github/tokyorgirls/20140712/ramen_prices.txt'
+data.path = '/path/to/file/ramen_prices.txt'
 data.frame <- read.table(data.path, header=TRUE, sep=',')
 
 # データの中身を確認する
@@ -25,7 +25,7 @@ ggplot(data.frame, aes(x=data.frame$Price)) + geom_histogram(binwidth=100)
 #####################################
 
 # データの読み込み
-data.path = '/Users/amacbee/Dropbox/github/tokyorgirls/20140712/test_scores_1.txt'
+data.path = '/path/to/file/test_scores_1.txt'
 data.frame <- read.table(data.path, header=TRUE, sep=',')
 
 # 1組のテストの平均点
@@ -40,7 +40,7 @@ ggplot(data.frame, aes(x=data.frame$Score)) + geom_histogram(binwidth=5)
 #####################################
 
 # データの読み込み
-data.path = '/Users/amacbee/Dropbox/github/tokyorgirls/20140712/test_scores_2.txt'
+data.path = '/path/to/file/test_scores_2.txt'
 data.frame <- read.table(data.path, header=TRUE, sep=',')
 
 # 2組のテストの平均点
@@ -55,7 +55,7 @@ ggplot(data.frame, aes(x=data.frame$Score)) + geom_histogram(binwidth=5)
 #####################################
 
 # データの読み込み
-data.path = '/Users/amacbee/Dropbox/github/tokyorgirls/20140712/body_data.txt'
+data.path = '/path/to/file/body_data.txt'
 data.frame <- read.table(data.path, header=TRUE, sep=',')
 
 # 平均身長
